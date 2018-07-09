@@ -155,3 +155,8 @@ After the collection process, I had 101,100 number of data points(This includes 
 I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was about 10 Epochs. Because, training more epochs increase validation loss. I used an adam optimizer so that manually training the learning rate wasn't necessary.
+
+### Reference
+[1] End to End Learning for Self-Driving Cars,
+Mariusz Bojarski, Davide Del Testa, Daniel Dworakowski, Bernhard Firner, Beat Flepp, Prasoon Goyal, Lawrence D. Jackel, Mathew Monfort, Urs Muller, Jiakai Zhang, Xin Zhang, Jake Zhao, Karol Zieba, https://arxiv.org/abs/1604.07316
+
