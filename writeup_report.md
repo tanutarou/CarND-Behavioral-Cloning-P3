@@ -90,13 +90,13 @@ In order to gauge how well the model was working, I split my image and steering 
 I gave a lot of thought to it and I found the sentences as bellow in project page.
 > Keep in mind that training images are loaded in BGR colorspace using cv2 while drive.py load images in RGB to predict the steering angles.
 
-I didn't know it. So the model was trained well in BGR colorspace. But the model predicted in RGB colorspace. It was the reason of my model's fail.
+I didn't know it. So the model was trained well in BGR colorspace. But the model predicted in RGB colorspace. It was the reason of my model's failure.
 
-I fixed this problem and run the simulator. My car is fail at this curve(below).
+I fixed this problem and run the simulator. My car failed at this curve(below).
 
 ![alt text][difficult]
 
-To combat this, I add batch normalization layers for my model and collect data for this curve more.
+To combat this, I added batch normalization layers for my model and collected data for this curve more.
 At the end of the process, the vehicle is able to drive autonomously around the track 1 and 2 without leaving the road.
 I show the mean squared error graph in the training process as bellow.
 
@@ -146,18 +146,17 @@ To capture good driving behavior, I first recorded one laps on track 1 and two l
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to how to return the center line.
 And, I recorded the inverse rotation driving too.
 
-To augment the data sat, I also flipped images and angles thinking that this would be easily generate different natural data. For example, here is an image that has then been flipped:
+To augment the data set, I also flipped images and angles thinking that this would be easily generate different natural data. For example, here is an image that has then been flipped:
 
 ![alt text][origin]
 ![alt text][flip]
 
 And, I used the images from three camera(center, right and left) and shifted angles to get data from left sides and right sides easily.
-
 After the collection process, I had 101,100 number of data points(This includes the augmented data). 
 
 I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was about 10 Epochs. Because, training more epochs increase validation loss. I used an adam optimizer so that manually training the learning rate wasn't necessary.
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was about 10 Epochs. Because, training more epochs increased validation loss. I used an adam optimizer so that manually training the learning rate wasn't necessary.
 
 
 Bellow gif files are the driving video by my trained model.  
