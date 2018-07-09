@@ -17,6 +17,9 @@ The goals / steps of this project are the following:
 [center]: ./imgs/center.png "center image"
 [flip]: ./imgs/flip.png "flipped image"
 [origin]: ./imgs/center.png "original Image"
+[video1]: ./imgs/video1.gif "video1"
+[video2]: ./imgs/video2.gif "video2"
+
 
 
 ## Rubric Points
@@ -155,6 +158,14 @@ After the collection process, I had 101,100 number of data points(This includes 
 I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was about 10 Epochs. Because, training more epochs increase validation loss. I used an adam optimizer so that manually training the learning rate wasn't necessary.
+
+
+Bellow gif files are the driving video by my trained model.
+Track 1:   
+![alt text][video1]
+
+Track 2:  
+![alt text][video2]
 
 ### Reference
 [1] End to End Learning for Self-Driving Cars,
