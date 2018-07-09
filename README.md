@@ -1,9 +1,18 @@
+[//]: # (Image References)
+[video1]: ./imgs/video1.gif "video1"
+[video2]: ./imgs/video2.gif "video2"
+
 # Behavioral Cloning Project
 
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
 Overview
 ---
+
+Track 1|Track 2|
+----|----|
+![alt text][video1]|![alt text][video2]|
+
 This repository is my solution for the Behavioral Cloning Project.
 
 In this project, I used convolutional network to drive autonomously on [the simulator](https://github.com/udacity/self-driving-car-sim).
@@ -15,7 +24,7 @@ This repository contains these files:
 * model.h5 (a trained Keras model)
 * a report writeup file (It explains my solution)
 * video1.mp4 (a video recording of my vehicle driving autonomously around the track 1)
-* video2.mp4 (a video recording of my vehicle driving autonomously around the track 1)
+* video2.mp4 (a video recording of my vehicle driving autonomously around the track 2)
 
 This README file describes how to output the video in the "Details About Files In This Directory" section.
 
