@@ -160,7 +160,7 @@ I finally randomly shuffled the data set and put 20% of the data into a validati
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was about 10 Epochs. Because, training more epochs increase validation loss. I used an adam optimizer so that manually training the learning rate wasn't necessary.
 
 
-Bellow gif files are the driving video by my trained model.
+Bellow gif files are the driving video by my trained model.  
 Track 1:   
 ![alt text][video1]
 
