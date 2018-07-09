@@ -22,7 +22,7 @@ This repository contains these files:
 * model.py (script used to create and train the model)
 * drive.py (script to drive the car)
 * model.h5 (a trained Keras model)
-* a report writeup file (It explains my solution)
+* writeup_report.md (It explains my solution)
 * video1.mp4 (a video recording of my vehicle driving autonomously around the track 1)
 * video2.mp4 (a video recording of my vehicle driving autonomously around the track 2)
 
